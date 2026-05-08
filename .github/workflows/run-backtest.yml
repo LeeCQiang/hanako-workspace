@@ -1,0 +1,23 @@
+name: Run Backtest
+
+on:
+  workflow_dispatch:
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 运行回测
+        run: python backtest/run_backtest.py
+      - name: 保存结果
+        run: |
+          git config user.name "Hanako Bot"
+          git config user.email "hanako-bot@lee-cqiang.dev"
+          git add backtest/results.json 2>/dev/null || true
+          git diff --quiet && git diff --staged --quiet || \
+            git commit -m "backtest: results $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
