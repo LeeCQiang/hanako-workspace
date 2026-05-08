@@ -13,13 +13,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: 运行回测
-        run: python backtest/run_backtest.py
+      - name: 运行回测v2
+        run: python backtest/run_backtest_v2.py
       - name: 推送结果
         run: |
           git config user.name "Hanako Bot"
           git config user.email "hanako-bot@lee-cqiang.dev"
-          git add backtest/results.json 2>/dev/null || true
+          git add backtest/results.json backtest/results_v2.json 2>/dev/null || true
           git diff --quiet && git diff --staged --quiet || \
-            git commit -m "backtest: results $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git commit -m "backtest: v2 results $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
