@@ -378,7 +378,7 @@ def main():
         results = run(data, strats)
         
         # 按盈亏比排序显示
-        sorted_r = sorted(results.values(), key=lambda x: x.get("profit_factor", 0) if isinstance(x, dict) and "profit_factor" in x else 0, reverse=True)
+        sorted_r = sorted(results.values(), key=lambda x: x.get("profit_factor", 0) if isinstance(x, dict) and "profit_factor" in x[1] else 0, reverse=True)
         
         print(f"\n  {'策略':<30} {'收益%':>7} {'胜率':>6} {'交易':>5} {'盈亏比':>7} {'回撤%':>7}")
         print(f"  {'-'*64}")
