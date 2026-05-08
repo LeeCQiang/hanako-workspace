@@ -1,2 +1,3 @@
 {"timestamp": "2026-05-08T15:21:32.239570+00:00", "type": "check", "data": {"price": 80178.0, "pnl_pct": 0.59, "pnl_dollar": 466.6, "status": "open", "action": "hold"}}
 {"timestamp": "2026-05-08T16:10:26.696364+00:00", "type": "check", "data": {"price": 80178.0, "pnl_pct": 0.59, "pnl_dollar": 466.6, "status": "open", "action": "hold"}}
+{"timestamp": "2026-05-08T17:50:23.992586+00:00", "type": "check", "data": {"price": 80178.0, "pnl_pct": 0.59, "pnl_dollar": 466.6, "status": "closed", "action": "hold"}}
