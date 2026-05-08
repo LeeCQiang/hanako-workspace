@@ -1,1 +1,6 @@
-{"position_status": "open", "entry_time": "2026-05-08T13:32:00Z", "last_check": null}
+{
+  "position_status": "open",
+  "entry_time": "2026-05-08T13:32:00Z",
+  "last_check": "2026-05-08T15:21:32.239685+00:00",
+  "last_price": 80178.0
+}
