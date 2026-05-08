@@ -29,4 +29,4 @@ EOF
           git add reviews/ 2>/dev/null || true
           git diff --quiet && git diff --staged --quiet || \
             git commit -m "review: $(date -u '+%Y-%m-%d %H:%M UTC')"
-          git push
+          git pull --rebase && git push

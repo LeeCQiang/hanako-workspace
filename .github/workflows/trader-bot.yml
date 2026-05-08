@@ -26,4 +26,4 @@ jobs:
           git add bot-state.json bot-log.jsonl 2>/dev/null || true
           git diff --quiet && git diff --staged --quiet || \
             git commit -m "bot: checkpoint $(date -u '+%Y-%m-%d %H:%M UTC')"
-          git push
+          git pull --rebase && git push

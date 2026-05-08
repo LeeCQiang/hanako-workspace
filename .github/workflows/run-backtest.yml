@@ -22,4 +22,4 @@ jobs:
           git add backtest/results.json backtest/results_v2.json 2>/dev/null || true
           git diff --quiet && git diff --staged --quiet || \
             git commit -m "backtest: v2 results $(date -u '+%Y-%m-%d %H:%M UTC')"
-          git push
+          git pull --rebase && git push
