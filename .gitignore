@@ -7,5 +7,7 @@
 Thumbs.db
 
 # 临时文件
+!bot-log.jsonl
+!bot-state.json
 *.log
 tmp/
