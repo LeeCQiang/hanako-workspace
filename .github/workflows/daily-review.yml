@@ -1,5 +1,4 @@
 name: Hanako Daily Review
-
 on:
   schedule:
     - cron: '0 13 * * *'
@@ -8,44 +7,28 @@ on:
 jobs:
   review:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      - name: 生成复盘报告
-        env:
-          AI_TRADER_TOKEN: ${{ secrets.AI_TRADER_TOKEN }}
+      - name: 生成复盘
         run: |
           DATE=$(date -u '+%Y-%m-%d')
-          REVIEW_FILE="reviews/${DATE}.md"
-          if [ ! -f "$REVIEW_FILE" ]; then
-            cat > "$REVIEW_FILE" << EOF
+          mkdir -p reviews
+          [ -f "reviews/${DATE}.md" ] || cat > "reviews/${DATE}.md" << EOF
 # 复盘 ${DATE}
+> 自动生成 - 等待人工补充
 
-## 自动生成 - 等待人工补充分析
-> 此文件由 GitHub Actions 自动创建
-
-### 昨日运行状态
-- 监控正常 ✅
-- 详细日志见 bot-log.jsonl
-- 当前状态见 bot-state.json
-
-### 待补充
-- [ ] 市场技术面分析
-- [ ] 策略评估
-- [ ] 优化计划
+昨日运行状态: 正常
 EOF
-          fi
-      - name: 提交复盘
+      - name: 推送
+        env:
+          GH_TOKEN: ${{ secrets.AI_TRADER_TOKEN }}
         run: |
           git config user.name "Hanako Bot"
           git config user.email "hanako-bot@lee-cqiang.dev"
+          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
           git add reviews/ bot-state.json bot-log.jsonl 2>/dev/null || true
           git diff --quiet && git diff --staged --quiet || \
-            git commit -m "review: daily checkpoint $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git commit -m "review: $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
