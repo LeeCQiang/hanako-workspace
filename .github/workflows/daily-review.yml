@@ -4,31 +4,29 @@ on:
     - cron: '0 13 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   review:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       - name: 生成复盘
         run: |
           DATE=$(date -u '+%Y-%m-%d')
           mkdir -p reviews
           [ -f "reviews/${DATE}.md" ] || cat > "reviews/${DATE}.md" << EOF
 # 复盘 ${DATE}
-> 自动生成 - 等待人工补充
+> 自动生成
 
 昨日运行状态: 正常
 EOF
       - name: 推送
-        env:
-          GH_TOKEN: ${{ secrets.AI_TRADER_TOKEN }}
         run: |
           git config user.name "Hanako Bot"
           git config user.email "hanako-bot@lee-cqiang.dev"
-          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
-          git add reviews/ bot-state.json bot-log.jsonl 2>/dev/null || true
+          git add reviews/ 2>/dev/null || true
           git diff --quiet && git diff --staged --quiet || \
             git commit -m "review: $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push

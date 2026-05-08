@@ -4,13 +4,14 @@ on:
     - cron: '*/30 * * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   monitor:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -19,12 +20,9 @@ jobs:
           AI_TRADER_TOKEN: ${{ secrets.AI_TRADER_TOKEN }}
         run: python scripts/trader-bot.py
       - name: 推送
-        env:
-          GH_TOKEN: ${{ secrets.AI_TRADER_TOKEN }}
         run: |
           git config user.name "Hanako Bot"
           git config user.email "hanako-bot@lee-cqiang.dev"
-          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
           git add bot-state.json bot-log.jsonl 2>/dev/null || true
           git diff --quiet && git diff --staged --quiet || \
             git commit -m "bot: checkpoint $(date -u '+%Y-%m-%d %H:%M UTC')"

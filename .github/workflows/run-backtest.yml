@@ -2,6 +2,9 @@ name: Run Backtest
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   backtest:
     runs-on: ubuntu-latest
@@ -13,12 +16,9 @@ jobs:
       - name: 运行回测
         run: python backtest/run_backtest.py
       - name: 推送结果
-        env:
-          GH_TOKEN: ${{ secrets.AI_TRADER_TOKEN }}
         run: |
           git config user.name "Hanako Bot"
           git config user.email "hanako-bot@lee-cqiang.dev"
-          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
           git add backtest/results.json 2>/dev/null || true
           git diff --quiet && git diff --staged --quiet || \
             git commit -m "backtest: results $(date -u '+%Y-%m-%d %H:%M UTC')"
