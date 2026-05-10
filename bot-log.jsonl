@@ -35,3 +35,5 @@
 {"timestamp": "2026-05-10T02:13:21.692631+00:00", "type": "check_failed", "data": {"reason": "price_fetch_failed"}}
 {"timestamp": "2026-05-10T05:48:13.210555+00:00", "type": "error", "data": {"msg": "\u83b7\u53d6BTC\u4ef7\u683c\u5931\u8d25", "raw": {"error": "The read operation timed out"}}}
 {"timestamp": "2026-05-10T05:48:13.210913+00:00", "type": "check_failed", "data": {"reason": "price_fetch_failed"}}
+{"timestamp": "2026-05-10T08:00:25.171135+00:00", "type": "error", "data": {"msg": "\u83b7\u53d6BTC\u4ef7\u683c\u5931\u8d25", "raw": {"error": "The read operation timed out"}}}
+{"timestamp": "2026-05-10T08:00:25.171499+00:00", "type": "check_failed", "data": {"reason": "price_fetch_failed"}}
