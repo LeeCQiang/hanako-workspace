@@ -67,3 +67,5 @@
 {"timestamp": "2026-05-11T06:32:08.743213+00:00", "type": "error", "data": {"msg": "\u83b7\u53d6BTC\u4ef7\u683c\u5931\u8d25", "raw": {"error": "The read operation timed out"}}}
 {"timestamp": "2026-05-11T06:32:08.743580+00:00", "type": "check_failed", "data": {"reason": "price_fetch_failed"}}
 {"timestamp": "2026-05-11T10:32:08.726652+00:00", "type": "check", "data": {"price": 80762.0, "pnl_pct": 1.32, "pnl_dollar": 1048.84, "status": "closed", "action": "hold"}}
+{"timestamp": "2026-05-11T13:41:35.436624+00:00", "type": "error", "data": {"msg": "\u83b7\u53d6BTC\u4ef7\u683c\u5931\u8d25", "raw": {"error": "The read operation timed out"}}}
+{"timestamp": "2026-05-11T13:41:35.437007+00:00", "type": "check_failed", "data": {"reason": "price_fetch_failed"}}
