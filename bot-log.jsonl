@@ -126,3 +126,5 @@
 {"timestamp": "2026-05-15T17:43:52.608852+00:00", "type": "check_failed", "data": {"reason": "price_fetch_failed"}}
 {"timestamp": "2026-05-15T19:21:18.449226+00:00", "type": "error", "data": {"msg": "\u83b7\u53d6BTC\u4ef7\u683c\u5931\u8d25", "raw": {"error": "HTTP Error 404: Not Found"}}}
 {"timestamp": "2026-05-15T19:21:18.449581+00:00", "type": "check_failed", "data": {"reason": "price_fetch_failed"}}
+{"timestamp": "2026-05-15T20:38:27.606942+00:00", "type": "error", "data": {"msg": "\u83b7\u53d6BTC\u4ef7\u683c\u5931\u8d25", "raw": {"error": "HTTP Error 404: Not Found"}}}
+{"timestamp": "2026-05-15T20:38:27.607240+00:00", "type": "check_failed", "data": {"reason": "price_fetch_failed"}}
