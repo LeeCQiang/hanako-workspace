@@ -141,3 +141,4 @@
 {"timestamp": "2026-05-16T07:54:15.786266+00:00", "type": "error", "data": {"msg": "\u83b7\u53d6BTC\u4ef7\u683c\u5931\u8d25", "raw": {"error": "HTTP Error 404: Not Found"}}}
 {"timestamp": "2026-05-16T07:54:15.786586+00:00", "type": "check_failed", "data": {"reason": "price_fetch_failed"}}
 {"timestamp": "2026-05-16T09:24:36.713194+00:00", "type": "check", "data": {"price": 78490.0, "pnl_pct": -1.53, "pnl_dollar": -1216.34, "status": "closed", "action": "hold"}}
+{"timestamp": "2026-05-16T10:43:27.433817+00:00", "type": "check", "data": {"price": 77986.0, "pnl_pct": -2.16, "pnl_dollar": -1718.83, "status": "closed", "action": "hold"}}
