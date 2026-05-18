@@ -182,3 +182,4 @@
 {"timestamp": "2026-05-18T20:12:41.401142+00:00", "type": "check", "data": {"price": 76929.0, "pnl_pct": -3.49, "pnl_dollar": -2772.66, "status": "closed", "action": "close_stop_loss"}}
 {"timestamp": "2026-05-18T20:12:43.781132+00:00", "type": "close_position", "data": {"price": 76929.0, "reason": "\u89e6\u8fbe\u6b62\u635f $76952", "pnl_dollar": -2772.66, "result": {"error": "HTTP Error 400: Bad Request"}}}
 {"timestamp": "2026-05-18T21:44:27.168709+00:00", "type": "check", "data": {"price": 77041.0, "pnl_pct": -3.35, "pnl_dollar": -2660.99, "status": "closed", "action": "hold"}}
+{"timestamp": "2026-05-18T22:53:30.141890+00:00", "type": "check", "data": {"price": 77121.0, "pnl_pct": -3.25, "pnl_dollar": -2581.23, "status": "closed", "action": "hold"}}
