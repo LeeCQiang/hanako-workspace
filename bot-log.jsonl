@@ -177,3 +177,5 @@
 {"timestamp": "2026-05-18T13:39:25.625032+00:00", "type": "check", "data": {"price": 77289.0, "pnl_pct": -3.04, "pnl_dollar": -2413.74, "status": "closed", "action": "hold"}}
 {"timestamp": "2026-05-18T16:44:43.183275+00:00", "type": "error", "data": {"msg": "\u83b7\u53d6BTC\u4ef7\u683c\u5931\u8d25", "raw": {"error": "The read operation timed out"}}}
 {"timestamp": "2026-05-18T16:44:43.183603+00:00", "type": "check_failed", "data": {"reason": "price_fetch_failed"}}
+{"timestamp": "2026-05-18T18:27:56.396137+00:00", "type": "check", "data": {"price": 76541.0, "pnl_pct": -3.98, "pnl_dollar": -3159.49, "status": "closed", "action": "close_stop_loss"}}
+{"timestamp": "2026-05-18T18:28:00.529780+00:00", "type": "close_position", "data": {"price": 76541.0, "reason": "\u89e6\u8fbe\u6b62\u635f $76952", "pnl_dollar": -3159.49, "result": {"error": "HTTP Error 400: Bad Request"}}}
