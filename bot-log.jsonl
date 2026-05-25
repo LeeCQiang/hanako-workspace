@@ -300,3 +300,4 @@
 {"timestamp": "2026-05-25T17:02:16.047075+00:00", "type": "check_failed", "data": {"reason": "price_fetch_failed"}}
 {"timestamp": "2026-05-25T18:57:31.315429+00:00", "type": "check", "data": {"price": 77526.0, "pnl_pct": -2.74, "pnl_dollar": -2177.45, "status": "closed", "action": "hold"}}
 {"timestamp": "2026-05-25T20:22:24.921325+00:00", "type": "check", "data": {"price": 77394.0, "pnl_pct": -2.91, "pnl_dollar": -2309.05, "status": "closed", "action": "hold"}}
+{"timestamp": "2026-05-25T21:41:49.720248+00:00", "type": "check", "data": {"price": 77304.0, "pnl_pct": -3.02, "pnl_dollar": -2398.78, "status": "closed", "action": "hold"}}
