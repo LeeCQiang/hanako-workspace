@@ -1,14 +1,14 @@
 {
   "position_status": "closed",
   "entry_time": "2026-05-08T13:32:00Z",
-  "close_time": "2026-05-27T10:56:42.439764+00:00",
+  "close_time": "2026-05-27T17:39:43.514018+00:00",
   "entry_price": 79710.0,
   "exit_price": 79585.0,
   "quantity": 0.997,
   "pnl": -124.62,
   "pnl_pct": -0.16,
   "close_reason": "\u89e6\u8fbe\u6b62\u635f $76952",
-  "last_check": "2026-05-27T10:56:42.439773+00:00",
-  "last_price": 75850.0,
-  "final_pnl": -3848.42
+  "last_check": "2026-05-27T17:39:43.514026+00:00",
+  "last_price": 74991.0,
+  "final_pnl": -4704.84
 }
