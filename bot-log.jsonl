@@ -1470,3 +1470,5 @@
 {"timestamp": "2026-07-21T05:21:32.972536+00:00", "type": "check_failed", "data": {"reason": "price_fetch_failed"}}
 {"timestamp": "2026-07-21T07:52:44.489026+00:00", "type": "check", "data": {"price": 65986.0, "pnl_pct": -17.22, "pnl_dollar": -13682.83, "status": "closed", "action": "close_stop_loss"}}
 {"timestamp": "2026-07-21T07:52:46.027850+00:00", "type": "close_position", "data": {"price": 65986.0, "reason": "\u89e6\u8fbe\u6b62\u635f $76952", "pnl_dollar": -13682.83, "result": {"error": "HTTP Error 400: Bad Request"}}}
+{"timestamp": "2026-07-21T10:18:50.717686+00:00", "type": "check", "data": {"price": 66257.0, "pnl_pct": -16.88, "pnl_dollar": -13412.64, "status": "closed", "action": "close_stop_loss"}}
+{"timestamp": "2026-07-21T10:18:52.720181+00:00", "type": "close_position", "data": {"price": 66257.0, "reason": "\u89e6\u8fbe\u6b62\u635f $76952", "pnl_dollar": -13412.64, "result": {"error": "HTTP Error 400: Bad Request"}}}
