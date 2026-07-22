@@ -1512,3 +1512,5 @@
 {"timestamp": "2026-07-22T20:35:35.896482+00:00", "type": "close_position", "data": {"price": 65893.0, "reason": "\u89e6\u8fbe\u6b62\u635f $76952", "pnl_dollar": -13775.55, "result": {"error": "HTTP Error 400: Bad Request"}}}
 {"timestamp": "2026-07-22T21:59:29.259761+00:00", "type": "error", "data": {"msg": "\u83b7\u53d6BTC\u4ef7\u683c\u5931\u8d25", "raw": {"error": "The read operation timed out"}}}
 {"timestamp": "2026-07-22T21:59:29.260093+00:00", "type": "check_failed", "data": {"reason": "price_fetch_failed"}}
+{"timestamp": "2026-07-22T23:08:24.524375+00:00", "type": "check", "data": {"price": 65930.0, "pnl_pct": -17.29, "pnl_dollar": -13738.66, "status": "closed", "action": "close_stop_loss"}}
+{"timestamp": "2026-07-22T23:08:25.903799+00:00", "type": "close_position", "data": {"price": 65930.0, "reason": "\u89e6\u8fbe\u6b62\u635f $76952", "pnl_dollar": -13738.66, "result": {"error": "HTTP Error 400: Bad Request"}}}
