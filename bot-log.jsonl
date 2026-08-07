@@ -1894,3 +1894,5 @@
 {"timestamp": "2026-08-07T03:43:46.102107+00:00", "type": "check_failed", "data": {"reason": "price_fetch_failed"}}
 {"timestamp": "2026-08-07T05:28:30.860163+00:00", "type": "error", "data": {"msg": "\u83b7\u53d6BTC\u4ef7\u683c\u5931\u8d25", "raw": {"error": "HTTP Error 500: Internal Server Error"}}}
 {"timestamp": "2026-08-07T05:28:30.860569+00:00", "type": "check_failed", "data": {"reason": "price_fetch_failed"}}
+{"timestamp": "2026-08-07T06:46:51.740721+00:00", "type": "error", "data": {"msg": "\u83b7\u53d6BTC\u4ef7\u683c\u5931\u8d25", "raw": {"error": "HTTP Error 500: Internal Server Error"}}}
+{"timestamp": "2026-08-07T06:46:51.741019+00:00", "type": "check_failed", "data": {"reason": "price_fetch_failed"}}
