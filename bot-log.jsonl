@@ -2072,3 +2072,5 @@
 {"timestamp": "2026-08-10T13:51:46.822696+00:00", "type": "close_position", "data": {"price": 64984.0, "reason": "\u89e6\u8fbe\u6b62\u635f $76952", "pnl_dollar": -14681.82, "result": {"error": "HTTP Error 400: Bad Request"}}}
 {"timestamp": "2026-08-10T14:51:03.103734+00:00", "type": "check", "data": {"price": 64984.0, "pnl_pct": -18.47, "pnl_dollar": -14681.82, "status": "closed", "action": "close_stop_loss"}}
 {"timestamp": "2026-08-10T14:51:04.396439+00:00", "type": "close_position", "data": {"price": 64984.0, "reason": "\u89e6\u8fbe\u6b62\u635f $76952", "pnl_dollar": -14681.82, "result": {"error": "HTTP Error 400: Bad Request"}}}
+{"timestamp": "2026-08-10T15:52:35.569911+00:00", "type": "check", "data": {"price": 64984.0, "pnl_pct": -18.47, "pnl_dollar": -14681.82, "status": "closed", "action": "close_stop_loss"}}
+{"timestamp": "2026-08-10T15:52:37.074284+00:00", "type": "close_position", "data": {"price": 64984.0, "reason": "\u89e6\u8fbe\u6b62\u635f $76952", "pnl_dollar": -14681.82, "result": {"error": "HTTP Error 400: Bad Request"}}}
